@@ -18,6 +18,7 @@
         width: 100%;
         min-height: 100vh;
         background-image: linear-gradient(to bottom right,rgba(171, 234, 183, 0),rgb(179, 182, 179));
+
     }
     nav{
         display: flex;
@@ -52,4 +53,10 @@
     }
     .icons-container a{
         color:var(--back);
+    }
+    .content-container{
+        display: flex;
+    }
+    .content-container aside{
+        
     }
