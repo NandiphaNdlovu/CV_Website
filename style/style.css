@@ -11,19 +11,14 @@
         box-sizing: border-box;
         font-family: 'poppins',Calibri;
     }
-    body{
-        background-image: linear-gradient(to bottom right,rgba(171, 234, 183, 0),rgb(179, 182, 179));
-    }
-    .header-container{
+    .container{
         width: 100%;
         min-height: 0px;
-        background-image: linear-gradient(to bottom right,rgba(171, 234, 183, 0),rgb(179, 182, 179));
-        border: solid black;
     }
     nav{
         display: flex;
         width: 100%;
-        justify-content: space-around;
+        justify-content: center;
         height: 80px;
         z-index: 111;
     }
@@ -55,11 +50,16 @@
         color:var(--back);
     }
     .content-container{
-        display: flex;
+        display: grid;
+        border:solid black;
     }
-    .skills-container{
-        width: 60%;
+    .about-container{
     }
     .content-container aside{
+        border:solid red;
         position: relative;
+    }
+    .skills-container{
+        border:solid green;
+        width: 60%;
     }
