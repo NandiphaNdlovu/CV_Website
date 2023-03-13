@@ -12,13 +12,13 @@
         font-family: 'poppins',Calibri;
     }
     body{
-        overflow: hidden;
+        background-image: linear-gradient(to bottom right,rgba(171, 234, 183, 0),rgb(179, 182, 179));
     }
     .header-container{
         width: 100%;
-        min-height: 100vh;
+        min-height: 0px;
         background-image: linear-gradient(to bottom right,rgba(171, 234, 183, 0),rgb(179, 182, 179));
-
+        border: solid black;
     }
     nav{
         display: flex;
@@ -57,6 +57,9 @@
     .content-container{
         display: flex;
     }
+    .skills-container{
+        width: 60%;
+    }
     .content-container aside{
-        
+        position: relative;
     }
