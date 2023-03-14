@@ -11,19 +11,11 @@
         box-sizing: border-box;
         font-family: 'poppins',Calibri;
     }
-    .container{
-        width: 100%;
-        min-height: 0px;
-    }
-    nav{
+    .nav-container{
         display: flex;
-        width: 100%;
         justify-content: center;
-        height: 80px;
-        z-index: 111;
     }
     .logo{
-        margin:2px 15px;
         font-size: large;
     }
     .nav-links{
@@ -31,7 +23,7 @@
     }
     .nav-links li{
         list-style: none;
-        margin:5px 15px;
+        padding: 2px;
     }
     .nav-links li a{
         color:var(--grey);
@@ -43,21 +35,16 @@
         color:var(--back);
     }
     .icons-container{
-        margin: 5px 15px;
         color:var(--back);
     }
     .icons-container a{
         color:var(--back);
     }
     .content-container{
-        display: grid;
         border:solid black;
     }
     .about-container{
-    }
-    .content-container aside{
-        border:solid red;
-        position: relative;
+        border:solid blue;
     }
     .skills-container{
         border:solid green;
