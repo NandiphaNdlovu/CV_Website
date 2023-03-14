@@ -11,6 +11,9 @@
         box-sizing: border-box;
         font-family: 'poppins',Calibri;
     }
+    body{
+        margin: 10px;
+    }
     .nav-container{
         display: flex;
         justify-content: center;
@@ -40,13 +43,18 @@
     .icons-container a{
         color:var(--back);
     }
-    .content-container{
-        border:solid black;
-    }
     .about-container{
-        border:solid blue;
+        display:inline-flex;
+        margin:5px;
+        box-shadow: black;
+    }
+    .content-container img{
+        justify-content: centre;
+        width: 100%;
+    }
+    img{
+        margin: 10px;
     }
     .skills-container{
-        border:solid green;
-        width: 60%;
+        margin: 5px;
     }
