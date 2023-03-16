@@ -1,0 +1,87 @@
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap');
+    
+    :root{
+        --back:#31603a;
+        --overlay: #3e054d77;
+        --light-font-color: #fff;
+        --grey: #777;
+    }
+
+    *,
+    *::before,
+    *::after{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    @media (prefers-reduced-motion: no-preference) {
+    :root {
+        scroll-behavior: smooth;
+    }
+    }
+    body{
+        margin: 10px;
+        background-image: linear-gradient(to bottom right,#31603a,#777);
+    }
+    #nav-container{
+        display: grid;
+        padding: 10px;
+        margin:10px;
+        border-radius:15px;
+        background-color: #31603abc;
+        grid-template-columns: 20% 60% 20%;
+        justify-content: center;
+    }
+    .logo{
+        justify-content: left;
+        font-size: large;
+    }
+    #nav-links{
+        justify-content: center;
+        display: flex;
+    }
+    #nav-links li{
+        list-style: none;
+        padding: 2px;
+    }
+    #nav-links li a{
+        color:var(--grey);
+        text-decoration: none;
+        letter-spacing: 2px;
+        text-transform: capitalize;
+    }
+    #nav-links li:hover a{
+        color:var(--back);
+    }
+    .icons-container{
+        justify-content: right;
+        color:var(--back);
+    }
+    .icons-container a{
+        color:var(--back);
+    }
+    .content{
+        justify-content: centre;
+        align-items: center;
+    }
+    .content-container img{
+        width: 100%;
+    }
+    .about-container{
+        display:inline-flex;
+        justify-content: centre;
+        align-items: center;
+        margin:10px;
+        padding:5px;
+        background:var(--back);
+        border-radius: 15px;
+        box-shadow:-15px -15px 15px rgba(255,255,255,0.2),15px 15px 15px rgba(0,0,0,0.1);
+        height: 500px;
+    }
+    .skills-container{
+        margin:5px;
+        padding:5px;
+        background:var(--back);
+        border-radius: 15px;
+        box-shadow:-15px -15px 15px rgba(255,255,255,0.2),15px 15px 15px rgba(0,0,0,0.1);
+    }
