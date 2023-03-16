@@ -15,16 +15,16 @@
             <div class="logo">
                 Portfolio
             </div>
-            <button class="navbar-toggler text-uppercase font-weight-bold text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler text-uppercase font-weight-bold text-white rounded" id="menu" type="button" data-bs-toggle="collapse" data-bs-target="#links-container" aria-controls="links-container" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
                 <i class="fas fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="links-container">
                 <ul class="navbar-nav ms-auto" id="nav-links">
-                    <li><a class="nav-item mx-0 mx-lg-1" href="#">Home</a></li>
-                    <li><a class="nav-item mx-0 mx-lg-1" href="https://">About</a></li>
-                    <li><a class="nav-item mx-0 mx-lg-1" href="https://">Skills</a></li>
-                    <li><a class="nav-item mx-0 mx-lg-1" href="https://">Projects</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#">Home</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#skills">Skills</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#projects">Projects</a></li>
                 </ul>
             </div>
             <div class="icons-container">
@@ -35,7 +35,7 @@
         </div>
     </div>
     <div class="content-container">
-        <div class="about-container">
+        <div class="about-container" id="about">
             <div>
                 <h1>About</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit alias qui, eius accusamus tenetur nisi ipsum ad vero fugiat voluptates, quae, cumque aspernatur earum consectetur. Sed ipsa ea ratione voluptatem.</p>
@@ -44,14 +44,16 @@
                 <img src="/images/picture2-removebg-preview (1).png" alt="">
             </div>
         </div>
-        <div class="skills-container">
+        <div class="skills-container" id="skills">
             <h1>Skills</h1>
             <span class="skills-typed"></span>
         </div>
-        <div class="about-container">
+        <div class="projects-container" id="projects">
             <div>
                 <h1>Projects</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit alias qui, eius accusamus tenetur nisi ipsum ad vero fugiat voluptates, quae, cumque aspernatur earum consectetur. Sed ipsa ea ratione voluptatem.</p>
+            <div>
+                
+            </div>
             </div>
         </div>
     </div>
