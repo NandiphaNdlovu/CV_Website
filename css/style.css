@@ -48,17 +48,17 @@
         padding: 2px;
     }
     #nav-links li a{
-        color:var(--grey);
+        color:var(--color4);
         text-decoration: none;
         letter-spacing: 2px;
         text-transform: capitalize;
     }
     #nav-links li:hover a{
-        color:var(--light-font-color);
+        color:var(--color2);
     }
     .icons-container{
         justify-content: right;
-        color:var(--grey);
+        color:var(--color4);
     }
     .icons-container a{
         color:var(--color1);
@@ -89,10 +89,10 @@
     }
     .download_cv{
         text-decoration: none;
-        color:var(--light-font-color);
+        color:var(--color1);
     }
     .download_cv:hover{
-        color:var(--light-font-color);
+        color:var(--color3);
     }
     .skills-container{
         margin:10px;
@@ -117,6 +117,7 @@
         display:grid;
         gap: 1.5rem;
         grid-template-columns: repeat(4,1fr);
+        
     }
     .grid-col-span-2{
         grid-column: span 2;
@@ -124,4 +125,22 @@
     .project-item:last-child{
         grid-column-start: 4;
         grid-row-end: 1;
+    }
+    .project-items div{
+        position: relative;
+        margin:10px;
+        margin-top: 20px;
+        padding:5px;
+        background:var(--transparent);
+        border-radius: 15px;
+        box-shadow:-5px -5px 15px rgba(255,255,255,0.2),5px 5px 15px rgba(0,0,0,0.1);
+        transition: transform .2s;
+    }
+    .project-items div:hover {
+        transform: scale(1.1);
+        background:var(--color1);
+    }
+    .project-items a{
+        text-decoration:none;
+        color: black;
     }
