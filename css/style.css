@@ -90,9 +90,9 @@
     }
     .profile-image{
         justify-self: left;
-        border:solid var(--transparent);
         border-radius:100%;
-        width:99%;
+        width:100%;
+        height: fit-content;
     }
     .download_cv{
         text-decoration: none;
