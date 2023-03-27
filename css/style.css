@@ -94,6 +94,11 @@
         width:100%;
         height: fit-content;
     }
+    .profile-image:hover{
+        width:100%;
+        height: fit-content;
+        border:solid rgba(0, 128, 0, 0);
+    }
     .download_cv{
         text-decoration: none;
         color:var(--color1);
