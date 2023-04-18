@@ -23,7 +23,6 @@
     }
     body{
         margin: 10px;
-        border: solid blueviolet;
         width: fit-content;
     }
     #nav-container{
@@ -127,7 +126,6 @@
         background:var(--transparent);
         border-radius: 15px;
         box-shadow:-5px -5px 15px rgba(255,255,255,0.2),5px 5px 15px rgba(0,0,0,0.1);
-        border: solid pink;
         width: fit-content;
     }
     .project-items{
