@@ -23,7 +23,8 @@
     }
     body{
         margin: 10px;
-        background-image: linear-gradient(to bottom right,#e0e4e1,#aca9a9);
+        border: solid blueviolet;
+        width: fit-content;
     }
     #nav-container{
         display: grid;
@@ -126,12 +127,13 @@
         background:var(--transparent);
         border-radius: 15px;
         box-shadow:-5px -5px 15px rgba(255,255,255,0.2),5px 5px 15px rgba(0,0,0,0.1);
+        border: solid pink;
+        width: fit-content;
     }
     .project-items{
         display:grid;
         gap: 1.5rem;
         grid-template-columns: repeat(4,1fr);
-        
     }
     .grid-col-span-2{
         grid-column: span 2;
