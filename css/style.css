@@ -102,9 +102,16 @@
     .download_cv{
         text-decoration: none;
         color:var(--color1);
+        margin-left: 10rem;
+        padding: 10px;
+        justify-self: center;
+        border-radius: 15px;
+        border: hidden;
+        background-color: var(--transparent);
     }
     .download_cv:hover{
         color:var(--color3);
+        background-color: var(--color1);
     }
     .skills-container{
         margin:10px;
@@ -117,6 +124,13 @@
     }
     .skills-container div{
         margin-top: 20px;
+    }
+    a{
+        text-decoration: none;
+        color: var(--color1);
+    }
+    a:hover{
+        color: var(--color3);
     }
     .projects-container{
         padding-left: 1em;
@@ -153,6 +167,7 @@
     .project-items div:hover {
         transform: scale(1.05);
         background:var(--color1);
+        color: var(--color3);
     }
     .project-items a{
         text-decoration:none;
