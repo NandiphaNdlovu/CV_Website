@@ -35,7 +35,6 @@
         justify-content: center;
     }
     #nav-container>#links-container{
-        justify-self: last baseline;
         color:var(--transparent);
     }
     .navbar-toggler{
@@ -46,7 +45,7 @@
         font-size: large;
     }
     #nav-links{
-        justify-content: center;
+        justify-content: right;
         display: flex;
     }
     #nav-links li{
