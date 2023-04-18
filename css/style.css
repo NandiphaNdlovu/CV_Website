@@ -91,7 +91,8 @@
     .profile-image{
         justify-self: left;
         border-radius:100%;
-        width: 10rem;
+        justify-self: baseline;
+        width: 90%;
     }
     .profile-image:hover{
         width:100%;
