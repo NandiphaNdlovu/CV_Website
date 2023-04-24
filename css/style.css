@@ -24,6 +24,7 @@
     body{
         margin: 10px;
         width: fit-content;
+        background-image:  linear-gradient(to bottom right,#e0e4e1,#aca9a9);
     }
     #nav-container{
         display: grid;
@@ -143,8 +144,13 @@
     }
     .project-items{
         display:grid;
-        gap: 1.5rem;
-        grid-template-columns: repeat(4,1fr);
+        grid-gap: 20px;
+        grid-template-columns: 1fr;
+    }
+    @media (min-width:1200px) {
+        .project-items{
+            grid-template-columns:1fr 300px 350px 1fr ;
+        }
     }
     .grid-col-span-2{
         grid-column: span 2;
