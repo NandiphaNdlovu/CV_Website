@@ -17,14 +17,21 @@
         padding: 0;
     }
     @media (prefers-reduced-motion: no-preference) {
-    :root {
-        scroll-behavior: smooth;
-    }
+        :root {
+            scroll-behavior: smooth;
+        }
     }
     body{
         margin: 10px;
         width: fit-content;
+        padding-top: 56px;
         background-image:  linear-gradient(to bottom right,#e0e4e1,#aca9a9);
+    }
+      
+    @media (min-width: 992px) {
+        body {
+          padding-top: 56px; /* account for height of shrunk navbar */
+        }
     }
     #nav-container{
         display: grid;
@@ -79,7 +86,6 @@
     .about-container{
         margin:10px;
         padding:5px;
-        margin-top:100px;
         background:var(--transparent);
         border-radius: 15px;
         box-shadow:-5px -5px 15px rgba(255,255,255,0.2),5px 5px 15px rgba(0,0,0,0.1);
@@ -104,7 +110,7 @@
         grid-row-start: 2;
         padding: 20px;
     }
-    @media (min-width:1000px) {
+    @media (min-width:992px) {
         .image-container{
             margin-left: 100px;
         }
