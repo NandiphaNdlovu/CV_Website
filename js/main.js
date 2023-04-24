@@ -16,24 +16,23 @@ var wordchange=new Typed(".technical-skills-typed",{
 window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function
-    var navbarShrink = function () {
+    const navbarShrink = function () {
         const navbarCollapsible = document.body.querySelector('#nav-container');
         if (!navbarCollapsible) {
             return;
         }
-        if (window.scrollY === 0) {
+        if (window.innerWidth >= 992 && window.scrollY === 0) {
             navbarCollapsible.classList.remove('navbar-shrink')
         } else {
             navbarCollapsible.classList.add('navbar-shrink')
         }
-
     };
 
     // Shrink the navbar 
     navbarShrink();
 
     // Shrink the navbar when page is scrolled
-    document.addEventListener('scroll', navbarShrink);
+    window.addEventListener('scroll', navbarShrink);
 
     // Activate Bootstrap scrollspy on the main nav element
     const mainNav = document.body.querySelector('#nav-container');
@@ -42,19 +41,22 @@ window.addEventListener('DOMContentLoaded', event => {
             target: '#nav-container',
             offset: 72,
         });
-    };
+    }
 
     // Collapse responsive navbar when toggler is visible
     const navbarToggler = document.body.querySelector('.navbar-toggler');
-    const responsiveNavItems = [].slice.call(
+    const responsiveNavItems = Array.from(
         document.querySelectorAll('#links-container .nav-link')
     );
-    responsiveNavItems.map(function (responsiveNavItem) {
+    responsiveNavItems.forEach(function (responsiveNavItem) {
         responsiveNavItem.addEventListener('click', () => {
             if (window.getComputedStyle(navbarToggler).display !== 'none') {
                 navbarToggler.click();
             }
         });
     });
+
+    // Shrink the navbar when the window is resized
+    window.addEventListener('resize', navbarShrink);
 
 });
