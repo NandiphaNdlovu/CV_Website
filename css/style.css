@@ -47,6 +47,7 @@
     .logo{
         justify-content: left;
         font-size: large;
+        color: var(--color2);
     }
     #nav-links{
         justify-content: right;
@@ -68,13 +69,12 @@
     }
     .icons-container{
         justify-self: right;
-        color:var(--color4);
     }
     .icons-container a{
-        color:var(--color1);
+        color:var(--color4);
     }
     .icons-container a:hover{
-        color:var(--color3);
+        color:var(--color2);
     }
     .content{
         justify-content: centre;
