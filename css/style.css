@@ -45,6 +45,7 @@
         justify-self: right;
     }
     .logo{
+        font-family: "Sofia",sans-serif;
         justify-content: left;
         font-size: large;
         color: var(--color2);
@@ -143,9 +144,16 @@
         box-shadow:-5px -5px 15px rgba(255,255,255,0.2),5px 5px 15px rgba(0,0,0,0.1);
 
     }
+    .skills{
+        padding: 10px;
+    }
     h1{
+        font-family: "Sofia",sans-serif;
         margin-top: 30px;
         padding: 15px;
+    }
+    h2{
+        font-family: "Sofia",sans-serif;
     }
     a{
         text-decoration: none;
