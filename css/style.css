@@ -1,11 +1,11 @@
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap');
     
     :root{
-        --color1:#215502;
-        --color2: #DCD964;
-        --color3: #7EA00E;
+        --color1:rgb(4, 75, 174);
+        --color2: rgb(198, 107, 229);
+        --color3: rgb(115, 29, 140);
         --color4: #1F4F59;
-        --color5: #54C0CC;
+        --color5: #ffffff;
         --transparent:#77777729;
     }
 
@@ -22,9 +22,6 @@
         }
     }
     body{
-        margin: 10px;
-        width: fit-content;
-        padding-top: 56px;
         background-image:  linear-gradient(to bottom right,#e0e4e1,#aca9a9);
     }
       
@@ -37,9 +34,8 @@
         display: grid;
         grid-template-columns: repeat(5,1fr);
         padding: 10px;
-        margin:10px;
         border-radius:15px;
-        background-image:  linear-gradient(to bottom right,#e0e4e1,#aca9a9);
+        background-image:  linear-gradient(to bottom right,var(--color1),var(--color2));
         justify-content: center;
     }
     #nav-container>#links-container{
@@ -130,11 +126,12 @@
         justify-self: center;
         border-radius: 15px;
         border: hidden;
-        background-color: var(--transparent);
+        background-image:  linear-gradient(to bottom right,#e0e4e1,#aca9a9);
     }
     .download_cv:hover{
-        color:var(--color3);
-        background-color: var(--color1);
+        color:var(--color5);
+        transform: scale(1.05);
+        background-image:  linear-gradient(to bottom right,var(--color1),var(--color2));
     }
     .skills-container{
         margin:10px;
@@ -194,8 +191,8 @@
     }
     .project-items div:hover {
         transform: scale(1.05);
-        background:var(--color1);
-        color: var(--color3);
+        background-image:  linear-gradient(to bottom right,var(--color1),var(--color2));
+        color: var(--color5);
     }
     .project-items a{
         text-decoration:none;
