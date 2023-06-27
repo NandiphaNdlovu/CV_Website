@@ -30,52 +30,32 @@
           padding-top: 56px; /* account for height of shrunk navbar */
         }
     }
-    #nav-container{
+    .content-container{
         display: grid;
-        grid-template-columns: repeat(5,1fr);
-        padding: 10px;
-        border-radius:15px;
-        background-image:  linear-gradient(to bottom right,#e0e4e1,#aca9a9);
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+    .navbar{
+        transition: 500ms ease;
+    }
+    .navbar-nav{
+        align-items: center;
         justify-content: center;
+        transition: 500ms ease;
     }
-    #nav-container>#links-container{
-        color:var(--transparent);
-    }
-    .navbar-toggler{
-        justify-self: right;
+    .collapse{
+        display: grid;
+        justify-content: center;
+        transition: 500ms ease;
     }
     .logo{
-        font-family: "Sofia",sans-serif;
-        justify-content: left;
+        font-family: " DejaVu Sans Mono",sans-serif;
         font-size: large;
         color: var(--color2);
     }
-    #nav-links{
-        justify-content: right;
-        width: 100px !important;
+    .nav-item{
         display: flex;
-    }
-    #nav-links li{
-        list-style: none;
-        padding: 2px;
-    }
-    #nav-links li a{
-        color:var(--color4);
-        text-decoration: none;
-        letter-spacing: 2px;
-        text-transform: capitalize;
-    }
-    #nav-links li:hover a{
-        color:var(--color2);
-    }
-    .icons-container{
-        justify-self: right;
-    }
-    .icons-container a{
-        color:var(--color4);
-    }
-    .icons-container a:hover{
-        color:var(--color2);
+        transition: 500ms ease;
     }
     .content{
         justify-content: centre;
@@ -84,6 +64,7 @@
     .about-container{
         margin:10px;
         padding:5px;
+        margin-top: 30px;
         background:var(--transparent);
         border-radius: 15px;
         box-shadow:-5px -5px 15px rgba(255,255,255,0.2),5px 5px 15px rgba(0,0,0,0.1);
@@ -138,7 +119,7 @@
     .skills-container{
         margin:10px;
         padding:5px;
-        margin-top:100px;
+        margin-top: 30px;
         background:var(--transparent);
         border-radius: 15px;
         box-shadow:-5px -5px 15px rgba(255,255,255,0.2),5px 5px 15px rgba(0,0,0,0.1);
@@ -148,24 +129,23 @@
         padding: 10px;
     }
     h1{
-        font-family: "Sofia",sans-serif;
-        margin-top: 30px;
+        font-family: " DejaVu Sans Mono",sans-serif;
         padding: 15px;
     }
     h2{
-        font-family: "Sofia",sans-serif;
+        font-family: " DejaVu Sans Mono",sans-serif;
     }
     a{
-        text-decoration: none;
-        color: var(--color3);
+        text-decoration: none !important;
+        color: var(--color3) !important;
     }
     a:hover{
-        color: var(--color1);
+        color: var(--color1) !important;
     }
     .projects-container{
         padding-left: 1em;
         margin:10px;
-        margin-top: 100px;
+        margin-top: 30px;
         padding:1em;
         background:var(--transparent);
         border-radius: 15px;
